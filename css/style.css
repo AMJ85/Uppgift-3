@@ -6,7 +6,7 @@ body {
     max-width: 1000px;
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(245, 245, 234);
-
+    margin: 20px;
 }
 
 /* ----------------- Header styling ----------------- */
@@ -17,6 +17,7 @@ header {
    padding: 20px;
    font-size: 1.5rem;
    color: white;
+   text-align: center;
 }
 
 /* ----------------- Navigation styling ----------------- */
@@ -66,6 +67,10 @@ nav a:link, nav a:visited {
 
 nav a.thisPage {
     background-color: rgb(106, 184, 147);
+}
+
+img {
+    max-width: 85%;
 }
 
 
