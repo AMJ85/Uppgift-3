@@ -78,6 +78,27 @@ img {
     width: 80%;
 }
 
+#booking fieldset {
+    background-color: rgb(255, 254, 247);
+    margin-bottom: 10px;
+}
+
+#booking legend {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+#customer div {
+    display: grid;
+    gap: 0.6em;
+    white-space: nowrap;
+    grid-template-columns: min-content auto;
+}
+
+#customer input {
+    width: 50ch;
+}
+
 #send input {
     font-size: 1.5em;
     background-color: rgb(35, 104, 23);
