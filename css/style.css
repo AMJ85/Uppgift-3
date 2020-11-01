@@ -6,7 +6,6 @@ body {
     max-width: 1000px;
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(245, 245, 234);
-    margin: 20px;
 }
 
 /* ----------------- Header styling ----------------- */
@@ -69,8 +68,19 @@ nav a.thisPage {
     background-color: rgb(106, 184, 147);
 }
 
+main {
+    margin: 20px;
+}
+
 img {
-    max-width: 85%;
+ max-width: 100%;
+}
+
+.centreimage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
 }
 
 
