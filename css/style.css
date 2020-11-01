@@ -111,9 +111,9 @@ iframe {
     border: none;
 }
 
-#newsbox {
+.newsbox {
     display: flex;
-    display: block;
+    flex-direction: column;
     background-color: rgb(209, 135, 128);
     padding: 10px;
     margin: 10px;
