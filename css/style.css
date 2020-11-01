@@ -12,7 +12,9 @@ body {
 
 header {
    background-image: url(/img/campfire-896196_1920.jpg);
-   height: 150px;
+   background-size: cover;
+   background-position: center center;
+   height: 200px;
    padding: 20px;
    font-size: 1.5rem;
    color: white;
@@ -24,10 +26,6 @@ header {
 nav {
     grid-area: nav;
     background-color: olivedrab;
-}
-
-#menuicon, #menucheckbox {
-    display: none;
 }
 
 nav ul {
@@ -64,16 +62,13 @@ nav a:link, nav a:visited {
     color: #43440d;
 }
 
-nav a.thisPage {
-    background-color: rgb(106, 184, 147);
-}
 
 main {
     margin: 20px;
 }
 
 img {
- max-width: 100%;
+ max-width: 85%;
 }
 
 .centreimage {
@@ -83,6 +78,17 @@ img {
     width: 80%;
 }
 
+#send input {
+    font-size: 1.5em;
+    background-color: rgb(35, 104, 23);
+    color: whitesmoke;
+}
+
+iframe {
+    width: 600px;
+    height: 450px;
+    border: none;
+}
 
 /* ----------------- Footer styling ----------------- */
 
@@ -93,20 +99,21 @@ footer {
 }
 
 #footerwrapper {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 #footerwrapper div {
-    margin: 10px;
+    margin: auto;
     padding: 10px;
     width: 50%;
 }
 
+/*
 #footerbox1 {
-    background-color: firebrick;
+    background-color: rgb(130, 167, 57);
 }
 
 #footerbox2 {
-    background-color: gold;
-}
+    background-color: rgb(130, 167, 57);
+}*/

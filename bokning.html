@@ -46,7 +46,7 @@
                     <input type="radio" name="accommodationType" value="tent"> Tältplats
                 </label> 
                 <label>
-                    <input type="radio" name="accommodationType" value="caravan" checked> Ställplats
+                    <input type="radio" name="accommodationType" value="caravan"> Ställplats
                 </label> 
                 <label>
                     <input type="radio" name="accommodationType" value="cabinSmall"> Småstuga
@@ -55,6 +55,23 @@
                     <input type="radio" name="accommodationType" value="cabinBig"> Storstugan
                 </label> 
             </div>
+        </fieldset>
+        <fieldset id="guests"><legend>Antal gäster</legend>
+            <label>
+                <select id="noOfPersons" name="guests" >
+                    <option value="1" selected>1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value=">10">>10</option>
+                </select>
+            </label>
         </fieldset>
         <fieldset id="date"><legend>Datum och antal nätter</legend>
         <div>
@@ -72,27 +89,26 @@
                     <input type="checkbox" name="extra" value="bike"> Hyra cykel (hela vistelsen)
                 </label> 
                 <label>
-                    <input type="checkbox" name="extra" value="parking"> Hyra fiskeutrustning (ange antal dagar under "Övriga önskemål")
+                    <input type="checkbox" name="extra" value="parking"> Hyra fiskeutrustning (hela vistelsen)
                 </label> 
+                </div>
             </fieldset>
             <fieldset id="message"><legend>Övriga önskemål</legend>
-                <label>
-                <input type="textarea" rows="5" cols="45" id="guestmessage" name="guestmessage" placeholder="Övrig information">
-            </label>
-            <fieldset id="customer"><legend>Kund</legend>
+                <textarea id="guestmessage" name="guestmessage" rows="4" cols="40" placeholder="Övrig information, t.ex. antal gäster om ni är fler än 10"> 
+                </textarea>
+            </fieldset>
+        <fieldset id="customer"><legend>Kund</legend>
                 <div>
                     <label for="name">* Namn</label>
                     <input type="text" id="name" name="name" required>
                     <label for="email">* E-post</label>
                     <input type="text" id="email" name="email" required>
                     <label for="phone">* Telefonnummer</label>
-                    <input type="tel" id="phone" name="phone">
+                    <input type="tel" id="phone" name="phone" required>
                 </div>
             </fieldset>
-            <div id="send"><input type="submit" value="Boka"></div>
-            </fieldset>
-            </div>
-
+            <div id="send"><input type="submit" value="Boka">
+            </div> 
     </form>
 
 </main>
