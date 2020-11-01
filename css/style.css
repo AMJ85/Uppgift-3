@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+/* ----------------- Main styling ----------------- */
+
 body {
     max-width: 1000px;
     font-family: Arial, Helvetica, sans-serif;
@@ -7,16 +9,85 @@ body {
 
 }
 
+/* ----------------- Header styling ----------------- */
+
 header {
    
 }
 
+/* ----------------- Navigation styling ----------------- */
+
 nav {
+    grid-area: nav;
     background-color: olivedrab;
 }
+
+#menuicon, #menucheckbox {
+    display: none;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0.4rem;
+    display: flex;
+    gap: 1rem;
+    flex-direction: row;
+    color: rgb(1, 19, 2);
+}
+
+nav ul ul {
+    margin-left: 0;
+    background-color: #4aa476;
+    border 1px solid #333333;
+    box-shadow: 6px 6px 10px #333333;
+    display: flex;
+    flex-direction: column;
+    visibility: hidden;
+    position: absolute;
+}
+
+nav ul li:hover ul {
+    visibility: visible;
+}
+
+nav a {
+    text-decoration: none;
+    display: block;
+    padding: 0.4rem;
+}
+
+nav a:link, nav a:visited {
+    color: #43440d;
+}
+
+nav a.thisPage {
+    background-color: rgb(106, 184, 147);
+}
+
+/* ----------------- Footer styling ----------------- */
 
 footer {
     background-color: olivedrab;
     color: white;
-    padding: 20px;
+    font-size: 0.9rem;
+}
+
+#footerwrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+#footerwrapper div {
+    margin: 10px;
+    padding: 10px;
+    width: 50%;
+}
+
+#footerbox1 {
+    background-color: firebrick;
+}
+
+#footerbox2 {
+    background-color: gold;
 }
