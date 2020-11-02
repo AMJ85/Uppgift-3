@@ -41,7 +41,7 @@ nav ul {
 nav ul ul {
     margin-left: 0;
     background-color: rgb(130, 167, 57);
-    box-shadow: 6px 6px 10px #333333;
+    box-shadow: 5px 5px 10px #333333;
     display: flex;
     flex-direction: row;
     visibility: hidden;
@@ -67,6 +67,8 @@ main {
     margin: 20px;
 }
 
+/* ----------------- Image styling ----------------- */
+
 img {
  max-width: 85%;
 }
@@ -77,6 +79,8 @@ img {
     margin-right: auto;
     width: 80%;
 }
+
+/* ----------------- Form styling ----------------- */
 
 #booking fieldset {
     background-color: rgb(255, 254, 247);
@@ -111,6 +115,15 @@ iframe {
     border: none;
 }
 
+.row {
+    display: flex;
+    padding: 10px;
+}
+
+.column {
+    flex: 75% 25%;
+    padding: 10px;
+}
 .newsbox {
     display: flex;
     flex-direction: column;
