@@ -33,7 +33,7 @@ nav ul {
     margin: 0;
     padding: 0.4rem;
     display: flex;
-    gap: 1rem;
+    gap: 0.7rem;
     flex-direction: row;
     color: rgb(1, 19, 2);
 }
