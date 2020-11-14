@@ -121,9 +121,10 @@ iframe {
 }
 
 .column {
-    flex: 75% 25%;
     padding: 10px;
 }
+
+
 .newsbox {
     display: flex;
     flex-direction: column;
